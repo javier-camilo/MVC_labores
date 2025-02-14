@@ -12,5 +12,6 @@ CREATE TABLE labores (
 );
 
 INSERT INTO labores (labor, fecha, cantidad, tarifa, empleado, lote) 
-VALUES ('Siembra', '2024-02-10', 5, 20.00, 'Juan Pérez', 'Lote 1');
-VALUES ('riego', '2025-02-12', 6, 200000.00, 'javier', 'lote 3');
+VALUES 
+    ('Siembra', '2024-02-10', 5, 20.00, 'Juan Pérez', 'Lote 1'),
+    ('Riego', '2025-02-12', 6, 200000.00, 'Javier', 'Lote 3');
