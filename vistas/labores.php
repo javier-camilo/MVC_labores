@@ -62,7 +62,14 @@ $labores = $modelo->obtenerLabores();
 
         <div class="mb-3">
             <label class="form-label">Labor</label>
-            <input type="text" class="form-control" name="labor" required>
+            <select class="form-control" name="labor" required>
+                <option value="">Seleccione una labor</option>
+                <option value="cosecha">Cosecha</option>
+                <option value="siembra">Siembra</option>
+                <option value="riego">Riego</option>
+                <option value="poda">Poda</option>
+                <option value="fertilizacion">Fertilización</option>
+            </select>
         </div>
 
         <div class="mb-3">
@@ -86,8 +93,14 @@ $labores = $modelo->obtenerLabores();
         </div>
 
         <div class="mb-3">
-            <label class="form-label">Lote</label>
-            <input type="text" class="form-control" name="lote" required>
+        <label class="form-label">Lote</label>
+        <select class="form-control" name="lote" required>
+            <option value="">Seleccione un lote</option>
+            <option value="lote1">Lote 1</option>
+            <option value="lote2">Lote 2</option>
+            <option value="lote3">Lote 3</option>
+            <option value="lote4">Lote 4</option>
+        </select>
         </div>
 
         <button type="submit" class="btn btn-primary">Registrar</button>

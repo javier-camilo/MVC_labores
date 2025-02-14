@@ -32,8 +32,15 @@ if (!$labor) {
         <input type="hidden" name="id" value="<?= $labor->id ?>">
 
         <div class="mb-3">
-            <label class="form-label">Labor</label>
-            <input type="text" class="form-control" name="labor" value="<?= $labor->labor ?>" required>
+        <label class="form-label">Labor</label>
+        <select class="form-control" name="labor" required>
+            <option value="">Seleccione una labor</option>
+            <option value="cosecha" <?= $labor->labor == 'cosecha' ? 'selected' : '' ?>>Cosecha</option>
+            <option value="siembra" <?= $labor->labor == 'siembra' ? 'selected' : '' ?>>Siembra</option>
+            <option value="riego" <?= $labor->labor == 'riego' ? 'selected' : '' ?>>Riego</option>
+            <option value="poda" <?= $labor->labor == 'poda' ? 'selected' : '' ?>>Poda</option>
+            <option value="fertilizacion" <?= $labor->labor == 'fertilizacion' ? 'selected' : '' ?>>Fertilización</option>
+            </select>
         </div>
 
         <div class="mb-3">
@@ -57,8 +64,14 @@ if (!$labor) {
         </div>
 
         <div class="mb-3">
-            <label class="form-label">Lote</label>
-            <input type="text" class="form-control" name="lote" value="<?= $labor->lote ?>" required>
+        <label class="form-label">Lote</label>
+        <select class="form-control" name="lote" required>
+            <option value="">Seleccione un lote</option>
+            <option value="lote1" <?= $labor->lote == 'lote1' ? 'selected' : '' ?>>Lote 1</option>
+            <option value="lote2" <?= $labor->lote == 'lote2' ? 'selected' : '' ?>>Lote 2</option>
+            <option value="lote3" <?= $labor->lote == 'lote3' ? 'selected' : '' ?>>Lote 3</option>
+            <option value="lote4" <?= $labor->lote == 'lote4' ? 'selected' : '' ?>>Lote 4</option>
+        </select>
         </div>
 
         <input type="hidden" name="accion" value="editar">
